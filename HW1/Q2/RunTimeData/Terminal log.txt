@@ -1,0 +1,141 @@
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\8pair.txt
+The time of QuickFind is 1420081 ns
+The time of QuickUnion is 448317 ns
+The time of Weighted QuickUnion is 514825 ns
+The time of QuickFind is 340343 ns
+The time of QuickUnion is 153955 ns
+The time of Weighted QuickUnion is 281224 ns
+The time of QuickFind is 638811 ns
+The time of QuickUnion is 125627 ns
+The time of Weighted QuickUnion is 182693 ns
+The time of QuickFind is 514005 ns
+The time of QuickUnion is 114543 ns
+The time of Weighted QuickUnion is 160114 ns
+The time of QuickFind is 461455 ns
+The time of QuickUnion is 110437 ns
+The time of Weighted QuickUnion is 162167 ns
+The average time of QuickFind is 674939 ns
+The average time of QuickUnion is 190575 ns
+The average time of WQuickUnion is 260204 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\32pair.txt
+The time of QuickFind is 2172613 ns
+The time of QuickUnion is 537406 ns
+The time of Weighted QuickUnion is 548901 ns
+The time of QuickFind is 1578141 ns
+The time of QuickUnion is 131785 ns
+The time of Weighted QuickUnion is 190083 ns
+The time of QuickFind is 183514 ns
+The time of QuickUnion is 133428 ns
+The time of Weighted QuickUnion is 187209 ns
+The time of QuickFind is 211431 ns
+The time of QuickUnion is 139586 ns
+The time of Weighted QuickUnion is 199526 ns
+The time of QuickFind is 199937 ns
+The time of QuickUnion is 129322 ns
+The time of Weighted QuickUnion is 182693 ns
+The average time of QuickFind is 869127 ns
+The average time of QuickUnion is 214305 ns
+The average time of WQuickUnion is 261682 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\128pair.txt
+The time of QuickFind is 5202039 ns
+The time of QuickUnion is 548490 ns
+The time of Weighted QuickUnion is 597756 ns
+The time of QuickFind is 400283 ns
+The time of QuickUnion is 156829 ns
+The time of Weighted QuickUnion is 201168 ns
+The time of QuickFind is 405209 ns
+The time of QuickUnion is 156008 ns
+The time of Weighted QuickUnion is 197883 ns
+The time of QuickFind is 394946 ns
+The time of QuickUnion is 154776 ns
+The time of Weighted QuickUnion is 188852 ns
+The time of QuickFind is 403157 ns
+The time of QuickUnion is 143280 ns
+The time of Weighted QuickUnion is 188031 ns
+The average time of QuickFind is 1361126 ns
+The average time of QuickUnion is 231876 ns
+The average time of WQuickUnion is 274738 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\512pair.txt
+The time of QuickFind is 6707924 ns
+The time of QuickUnion is 735699 ns
+The time of Weighted QuickUnion is 719278 ns
+The time of QuickFind is 1291170 ns
+The time of QuickUnion is 247560 ns
+The time of Weighted QuickUnion is 343217 ns
+The time of QuickFind is 1395448 ns
+The time of QuickUnion is 260287 ns
+The time of Weighted QuickUnion is 289846 ns
+The time of QuickFind is 1259968 ns
+The time of QuickUnion is 243044 ns
+The time of Weighted QuickUnion is 298879 ns
+The time of QuickFind is 1298149 ns
+The time of QuickUnion is 263161 ns
+The time of Weighted QuickUnion is 291488 ns
+The average time of QuickFind is 2390531 ns
+The average time of QuickUnion is 349950 ns
+The average time of WQuickUnion is 388541 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\1024pair.txt
+The time of QuickFind is 8790628 ns
+The time of QuickUnion is 968069 ns
+The time of Weighted QuickUnion is 1012408 ns
+The time of QuickFind is 2468618 ns
+The time of QuickUnion is 389609 ns
+The time of Weighted QuickUnion is 552185 ns
+The time of QuickFind is 2930893 ns
+The time of QuickUnion is 383451 ns
+The time of Weighted QuickUnion is 440106 ns
+The time of QuickFind is 2450553 ns
+The time of QuickUnion is 381398 ns
+The time of Weighted QuickUnion is 442980 ns
+The time of QuickFind is 2714946 ns
+The time of QuickUnion is 383040 ns
+The time of Weighted QuickUnion is 450781 ns
+The average time of QuickFind is 3871127 ns
+The average time of QuickUnion is 501113 ns
+The average time of WQuickUnion is 579692 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\4096pair.txt
+The time of QuickFind is 15643475 ns
+The time of QuickUnion is 2249386 ns
+The time of Weighted QuickUnion is 1957897 ns
+The time of QuickFind is 9661808 ns
+The time of QuickUnion is 1545298 ns
+The time of Weighted QuickUnion is 1381900 ns
+The time of QuickFind is 9658524 ns
+The time of QuickUnion is 1439377 ns
+The time of Weighted QuickUnion is 1433629 ns
+The time of QuickFind is 10599907 ns
+The time of QuickUnion is 1421723 ns
+The time of Weighted QuickUnion is 1258326 ns
+The time of QuickFind is 9711074 ns
+The time of QuickUnion is 1522718 ns
+The time of Weighted QuickUnion is 1319908 ns
+The average time of QuickFind is 11054957 ns
+The average time of QuickUnion is 1635700 ns
+The average time of WQuickUnion is 1470332 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>java Main ..\..\..\hw1-2.data\8192pair.txt
+The time of QuickFind is 33186960 ns
+The time of QuickUnion is 7293363 ns
+The time of Weighted QuickUnion is 3662899 ns
+The time of QuickFind is 25982274 ns
+The time of QuickUnion is 6258786 ns
+The time of Weighted QuickUnion is 2638584 ns
+The time of QuickFind is 25968315 ns
+The time of QuickUnion is 5812932 ns
+The time of Weighted QuickUnion is 2470260 ns
+The time of QuickFind is 25430088 ns
+The time of QuickUnion is 4204820 ns
+The time of Weighted QuickUnion is 851885 ns
+The time of QuickFind is 24172584 ns
+The time of QuickUnion is 3755271 ns
+The time of Weighted QuickUnion is 802619 ns
+The average time of QuickFind is 26948044 ns
+The average time of QuickUnion is 5465034 ns
+The average time of WQuickUnion is 2085249 ns
+
+C:\Users\tzzma\source\repos\573\HW1_2\out\production\HW1_2>

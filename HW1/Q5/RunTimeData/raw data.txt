@@ -1,0 +1,92 @@
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\8int.txt
+The time is 16011 ns
+The result of 3-sum is 0
+The time is 14780 ns
+The result of 3-sum is 0
+The time is 8211 ns
+The result of 3-sum is 0
+The time is 15601 ns
+The result of 3-sum is 0
+The time is 6158 ns
+The result of 3-sum is 0
+The ave time is 12152 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\32int.txt
+The time is 174482 ns
+The result of 3-sum is 0
+The time is 91141 ns
+The result of 3-sum is 0
+The time is 84573 ns
+The result of 3-sum is 0
+The time is 78003 ns
+The result of 3-sum is 0
+The time is 87446 ns
+The result of 3-sum is 0
+The ave time is 103129 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\128int.txt
+The time is 1709106 ns
+The result of 3-sum is 0
+The time is 1498496 ns
+The result of 3-sum is 0
+The time is 1350699 ns
+The result of 3-sum is 0
+The time is 1231640 ns
+The result of 3-sum is 0
+The time is 1271874 ns
+The result of 3-sum is 0
+The ave time is 1412363 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\512int.txt
+The time is 13527106 ns
+The result of 3-sum is 0
+The time is 3345135 ns
+The result of 3-sum is 0
+The time is 3230592 ns
+The result of 3-sum is 0
+The time is 3245372 ns
+The result of 3-sum is 0
+The time is 3222382 ns
+The result of 3-sum is 0
+The ave time is 5314117 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\1024int.txt
+The time is 20416902 ns
+The result of 3-sum is 0
+The time is 17693745 ns
+The result of 3-sum is 0
+The time is 1726350 ns
+The result of 3-sum is 0
+The time is 921267 ns
+The result of 3-sum is 0
+The time is 982438 ns
+The result of 3-sum is 0
+The ave time is 8348140 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\4096int.txt
+The time is 34640296 ns
+The result of 3-sum is 0
+The time is 24095812 ns
+The result of 3-sum is 0
+The time is 34249455 ns
+The result of 3-sum is 0
+The time is 15032170 ns
+The result of 3-sum is 0
+The time is 15138502 ns
+The result of 3-sum is 0
+The ave time is 24631247 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>java Main ..\..\..\hw1-1.data\8192int.txt
+The time is 95041990 ns
+The result of 3-sum is 0
+The time is 110777017 ns
+The result of 3-sum is 0
+The time is 90309207 ns
+The result of 3-sum is 0
+The time is 76367860 ns
+The result of 3-sum is 0
+The time is 76825209 ns
+The result of 3-sum is 0
+The ave time is 89864256 ns
+
+C:\Users\tzzma\source\repos\573\HW1_5\out\production\HW1_5>
