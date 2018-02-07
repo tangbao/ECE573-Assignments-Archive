@@ -1,3 +1,5 @@
+//I have to say I did a really bad job in this Homework.
+
 Q1.   We discussed two versions of the 3-sum problem: A "naive" implementation
 (O(N^3)) and a "sophisticated" implementation (O(N^2 lg N)). Implement these
 algorithms.  Your implementation should be able to read data in from regular
