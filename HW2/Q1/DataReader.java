@@ -1,7 +1,7 @@
 /*
-    Read data from files
-    Written by Zhongze Tang for DSA HW
- */
+Read data from files
+Written by Zhongze Tang for DSA HW
+*/
 
 import java.io.*;
 import java.util.ArrayList;
