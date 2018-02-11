@@ -22,20 +22,24 @@ public class Main{
 			}
 		}
 
-		data1.addAll(dataReader.readFile(args[0]));
+		//data1.addAll(dataReader.readFile(args[0]));
 		data2.addAll(data1);
 
 		ShellSort ss = new ShellSort();
 		SortTest st = new SortTest();
 
-		//Shellsort
-		int[] gap_ss = new int[]{7,3,1};
-		ss.sort(data1, gap_ss, 1);
-		st.check(data1, 1);
 		//Insertion sort
 		int[] gap_insert = new int[]{1};
+		System.out.print("Insertion sort ");
 		ss.sort(data2, gap_insert, 1);
 		st.check(data2, 1);
+
+		//Shellsort
+		int[] gap_ss = new int[]{7,3,1};
+		System.out.print("Shell sort ");
+		ss.sort(data1, gap_ss, 1);
+		st.check(data1, 1);
+
 
 	}
 }

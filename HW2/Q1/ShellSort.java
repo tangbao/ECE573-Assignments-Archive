@@ -1,9 +1,9 @@
 /*
     gaps[] store the sequence for ShellSort
+    when gaps = {1}, it's an insertion sort.
+
     order = 1 => ascending order
     order = 0 => descending order
-
-    when gaps = {1}, it's an insertion sort.
  */
 
 import java.util.List;
@@ -14,34 +14,36 @@ public class ShellSort{
         int cnt = 0;
         if(order == 1){
             for(int gap:gaps){
-                for(int i = gap; i<length; i++){
-                    for(int j = i-gap; j>=gap;j=j-gap){
+                for(int i = gap; i<length; i=i+gap){
+                    for(int j = i; j>=gap;j=j-gap){
+                        cnt++;
                         if (list.get(j)<list.get(j-gap)){
-                            cnt++;
                             int temp = list.get(j);
                             list.set(j, list.get(j-gap));
                             list.set(j-gap, temp);
+                        }else{
+                            break;
                         }
                     }
-                    cnt++;
                 }
             }
-            System.out.println("Compare "+cnt+" times");
+            System.out.println("compare "+cnt+" times");
         }else if(order == 0){
-            for(int gap: gaps){
-                    for(int i = gap; i<length; i++){
-                        for(int j = i-gap; j>=gap;j=j-gap){
-                            if (list.get(j)>list.get(j-gap)){
-                                cnt++;
-                                int temp = list.get(j);
-                                list.set(j, list.get(j-gap));
-                                list.set(j-gap, temp);
-                            }
-                        }
+            for(int gap:gaps){
+                for(int i = gap; i<length; i=i+gap){
+                    for(int j = i; j>=gap;j=j-gap){
                         cnt++;
+                        if (list.get(j)>list.get(j-gap)){
+                            int temp = list.get(j);
+                            list.set(j, list.get(j-gap));
+                            list.set(j-gap, temp);
+                        }else{
+                            break;
+                        }
                     }
                 }
-            System.out.println("Compare "+cnt+" times");
+            }
+            System.out.println("compare "+cnt+" times");
         }else{
             System.out.println("Error: Wrong order.");
         }
