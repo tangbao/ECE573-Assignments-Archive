@@ -39,4 +39,6 @@ Knuth shuffle (2) Selection sort(3) Insertion sort (4) Mergesort(top-down)(5)
 Mergesort (bottom-up) (6) Quicksort (standard, no shuffle) (7) Quicksort (3-way,
 no shuffle) (8) Heapsort.
 
+//not avaliable yet
+
 [location of data: https://sakai.rutgers.edu/access/content/group/9a721e60-ef8e-412a-835b-14c0ab9020f0/HW-Dataset/algorithm-stage.png ]
