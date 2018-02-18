@@ -22,6 +22,12 @@ public class Main {
             }
         }
 
+        MergeSort ms = new MergeSort();
+        ms.topdown(data);
+
+        SortTest st = new SortTest();
+        st.check(data, 1);
+
 
     }
 }
