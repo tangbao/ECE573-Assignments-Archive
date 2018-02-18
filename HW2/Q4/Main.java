@@ -22,13 +22,14 @@ public class Main {
             }
         }
 
-	List<Integer> data2 = new ArrayList<>();
-	MergeSort ms = new MergeSort();
-	SortTest st = new SortTest();
+        List<Integer> data2 = new ArrayList<>();
+        MergeSort ms = new MergeSort();
+        SortTest st = new SortTest();
 
-	ms.updown(data);
-	st.check(data,1);
-	ms.bottomup(data2);
-	st.check(data2,1);
+        ms.topdown(data);
+        st.check(data,1);
+
+        ms.bottomup(data2);
+        st.check(data2,1);
     }
 }
