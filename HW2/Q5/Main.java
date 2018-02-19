@@ -3,6 +3,8 @@ import java.util.List;
 
 public class Main {
 
+    public static int N = 7;
+
     public static void main(String[] args) {
         DataReader dataReader = new DataReader();
         List<Integer> data = new ArrayList<>();
@@ -24,12 +26,13 @@ public class Main {
 
         List<Integer> data2 = new ArrayList<>(data);
         MergeSort ms = new MergeSort();
+        QuickSort qs = new QuickSort();
         SortTest st = new SortTest();
 
-        ms.topdown(data);
+        ms.cutoff(data, N);
         st.check(data,1);
 
-        ms.bottomup(data2);
+        qs.sort_mO3(data2);
         st.check(data2,1);
     }
 }
