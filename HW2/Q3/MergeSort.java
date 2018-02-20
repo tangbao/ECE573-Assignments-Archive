@@ -3,6 +3,11 @@ import java.util.List;
 
 public class MergeSort {
 
+    /*
+        an optimized version of MergeSort-topdown
+        it will check if the two subsequences that are going to merge has been in-order
+     */
+
     private int cnt = 0;
 //    private int cutoff = 0;
 //
@@ -89,6 +94,7 @@ public class MergeSort {
         sort_chksorted(list, temp, start, mid);
         sort_chksorted(list, temp, mid+1, end);
 
+        //check if in-order
         if (list.get(mid) <= list.get(mid+1)){
             cnt++;
             return;

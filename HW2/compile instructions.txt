@@ -1,0 +1,19 @@
+Enter every child folder and use
+
+```
+javac *.java
+```
+
+to compile the program.
+
+Then use
+
+```
+java Main data_file_name1 data_file_name2 ...
+```
+
+to run the program with the data from data_file_name*
+
+In Q2, you have to input two data set at the same time because of the requirement of the question.
+
+In Q3, you don't need to input data.

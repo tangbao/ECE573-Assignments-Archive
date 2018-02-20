@@ -16,10 +16,23 @@ public class Main{
 			return;
 		}
 
+		List<Integer> data2 = new ArrayList<>(data);
+
 		MergeSort ms = new MergeSort();
+		NanoTimer nt1 = new NanoTimer();
 		ms.chksorted(data);
+		long time1 = nt1.calc();
+		System.out.println("The time of mergesort is "+time1+" ns");
+
+		CountingSort cs = new CountingSort();
+        NanoTimer nt2 = new NanoTimer();
+		cs.sort(data2);
+		long time2 = nt2.calc();
+        System.out.println("The time of countingsort is "+time2+" ns");
+
 		SortTest st = new SortTest();
 		st.check(data,1);
+        st.check(data2,1);
 
 	}
 }

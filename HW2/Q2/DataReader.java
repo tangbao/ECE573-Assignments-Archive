@@ -18,7 +18,7 @@ public class DataReader {
             try{
                 while((temp = buffReader.readLine())!=null){
                     int num = Integer.parseInt(temp);
-                    r.add(num);
+                    r.add(num-1);
                 }
                 buffReader.close();
             }catch (IOException e){

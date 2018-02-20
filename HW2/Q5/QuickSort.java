@@ -2,11 +2,14 @@ import java.util.List;
 
 public class QuickSort {
 
+    private int cutoff;
+
     /*
         No random shuffle
      */
 
-    public void sort_mO3(List<Integer> list){
+    public void sort_mO3(List<Integer> list, int co){
+        cutoff = co;
         sort(list,0, list.size()-1);
     }
 
@@ -17,6 +20,11 @@ public class QuickSort {
 
         if (hi <= lo)
             return;
+
+        if(hi-lo<=cutoff){
+            InsertionSort.sort(list,lo,hi);
+            return;
+        }
 
         int m = medianOf3(list, lo, hi);
         swap(list, lo, m);
@@ -47,8 +55,7 @@ public class QuickSort {
 
     private int medianOf3(List<Integer> list, int lo, int hi){
         /*
-            See
-            https://stackoverflow.com/questions/7559608/median-of-three-values-strategy
+            See https://stackoverflow.com/questions/7559608/median-of-three-values-strategy
             Answer 2, python implementation
          */
 

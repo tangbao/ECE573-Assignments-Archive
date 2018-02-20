@@ -14,7 +14,7 @@ public class ShellSort{
         int cnt = 0;
         if(order == 1){
             for(int gap:gaps){
-                for(int i = gap; i<length; i=i+gap){
+                for(int i = gap; i<length; i++){
                     for(int j = i; j>=gap;j=j-gap){
                         cnt++;
                         if (list.get(j)<list.get(j-gap)){

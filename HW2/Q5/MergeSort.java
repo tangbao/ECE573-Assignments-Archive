@@ -3,16 +3,20 @@ import java.util.List;
 
 public class MergeSort {
 
-    private int cnt = 0;
+//    private int cnt = 0;
     private int cutoff = 0;
+
+    /*
+        Three versions of MergeSort, topdown, bottomup and cutoff
+     */
 
     public void topdown(List<Integer> list){
         int start = 0;
         int end = list.size()-1;
         List<Integer> temp = new ArrayList<>(list);
-        cnt = 0;
+//        cnt = 0;
         sort_topdown(list, temp, start, end);
-        System.out.println("The number of comparisons of topdown is "+cnt);
+//        System.out.println("The number of comparisons of topdown is "+cnt);
     }
 
     private void sort_topdown(List<Integer> list, List<Integer> temp, int start, int end){
@@ -29,7 +33,7 @@ public class MergeSort {
     public void bottomup(List<Integer> list){
         int length = list.size();
         List<Integer> temp = new ArrayList<>(list);
-        cnt = 0;
+//        cnt = 0;
 
         int sz = 1;
         while(sz < length){
@@ -41,7 +45,7 @@ public class MergeSort {
             sz = sz*2;
         }
 
-        System.out.println("The number of comparisons of bottomup is "+cnt);
+//        System.out.println("The number of comparisons of bottomup is "+cnt);
     }
 
     public void cutoff(List<Integer> list, int co){
@@ -50,9 +54,9 @@ public class MergeSort {
         int start = 0;
         int end = list.size()-1;
         List<Integer> temp = new ArrayList<>(list);
-        cnt = 0;
+//        cnt = 0;
         sort_cutoff(list, temp, start, end);
-        System.out.println("The number of comparisons of topdown is "+cnt);
+//        System.out.println("The number of comparisons of cutoff is "+cnt);
     }
 
     private void sort_cutoff(List<Integer> list, List<Integer> temp, int start, int end){
@@ -86,10 +90,10 @@ public class MergeSort {
             }else if(right>end){
                 list.set(i, temp.get(left++));
             }else if(temp.get(left) <= temp.get(right)){
-                cnt++;
+//                cnt++;
                 list.set(i, temp.get(left++));
             }else {
-                cnt++;
+//                cnt++;
                 list.set(i, temp.get(right++));
             }
         }
