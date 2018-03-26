@@ -3,6 +3,8 @@
  */
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
@@ -94,9 +96,14 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
      *  Calc the internal path length
      */
 
-    public int getInternalPathLen(){
-        return getInternalPathLen(root);
+    public double getQ4Res(){
+        return getQ4Res(root);
     }
+
+    private double getQ4Res(Node node){
+        return getInternalPathLen(node) * 1.0 / node.size;
+    }
+
 
     private int getInternalPathLen(Node node){
         int pathLen = 0;

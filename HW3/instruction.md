@@ -6,6 +6,8 @@ Develop an implementation of the basic symbol-table API that uses 2-3 trees that
 
 ### Q2.
 
+Q2 is based on Q1, actually.
+
 Run experiments to develop a hypothesis estimating the average path length in a tree built from (i) N-random insertions. (ii) N-sorted insertions?
 
 ### Q3.
@@ -16,8 +18,8 @@ Write a program that computes the percentage of red nodes in a given red-black t
 
 Run empirical studies to compute the average and std deviation of the average lenght of a path to a random node (internal path length divided by tree size) in a red-black BST built by insertion of N random keys into an initially empty tree, for N from 1 to 10,000. Do at least 1,000 trials for each size.
 
-### Q5. 
+### Q5.
 
 Implement the rank() and select() ordered operations for a BST. Use data set linked below. (i) What is the value of select(7) for the data set? (ii)  What is the value of rank(7) for the data set? [10 points]
 
-Data Set for Q3 is: https://sakai.rutgers.edu/access/content/group/f73f2fd4-280d-4e7c-8cf2-9cc34bcffcff/HW-DataSet/select-data.txt
+Data Set for Q5 is: https://sakai.rutgers.edu/access/content/group/f73f2fd4-280d-4e7c-8cf2-9cc34bcffcff/HW-DataSet/select-data.txt
