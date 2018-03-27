@@ -1,0 +1,17 @@
+Enter every child folder and use
+===========
+javac *.java
+===========
+to compile the program.
+
+Then use
+===========
+java Main select-data.txt
+===========
+to run Q5.
+
+use
+===========
+java Main
+===========
+to run other questions.
