@@ -14,9 +14,9 @@ public class Main {
             double avelen2 = 0.0;
             for(int i = 0; i<TRAIL_NUM; i++){
                 TwoThreeTree<Integer, Integer> ttt1 = getOrderedInput(num);
-                avelen1 += ttt1.getLenSum() * 1.0 / num;
+                avelen1 += ttt1.getLenSumWithoutRed() * 1.0 / num;
                 TwoThreeTree<Integer, Integer> ttt2 = getRandomInput(num);
-                avelen2 += ttt2.getLenSum() * 1.0 / num;
+                avelen2 += ttt2.getLenSumWithoutRed() * 1.0 / num;
             }
             avelen1 = avelen1/TRAIL_NUM;
             avelen2 = avelen2/TRAIL_NUM;

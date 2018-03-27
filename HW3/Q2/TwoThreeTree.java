@@ -34,13 +34,25 @@ public class TwoThreeTree<Key extends Comparable<Key>, Value> {
      *
      */
 
+    public int getLenSumWithoutRed(){
+        return getLenSumWithoutRed(root);
+    }
+
+    private int getLenSumWithoutRed(Node x){
+        if (x==null) return 0;
+        int cnt = size(x) + getLenSumWithoutRed(x.left) +getLenSumWithoutRed(x.right);
+        if(isRed(x)) cnt = cnt - size(x);
+        return cnt;
+    }
+
     public int getLenSum(){
         return getLenSum(root);
     }
 
     private int getLenSum(Node x){
         if (x==null) return 0;
-        return size(x) + getLenSum(x.left) +getLenSum(x.right);
+        int cnt = size(x) + getLenSum(x.left) +getLenSum(x.right);
+        return cnt;
     }
 
 
@@ -81,22 +93,23 @@ public class TwoThreeTree<Key extends Comparable<Key>, Value> {
         int cmp = key.compareTo(x.key);
         if(cmp < 0){
             x.left = put(x.left, key, val);
-            if(isRed(x) || isRed(x.right)) x.left.color = BLACK;
+            if(isRed(x) || isRed(x.right)) {
+                x.left.color = BLACK;
+            }
         }else if(cmp > 0){
             x.right = put(x.right, key ,val);
-            if(isRed(x) || isRed(x.left)) x.right.color = BLACK;
+            if(isRed(x) || isRed(x.left)){
+                x.right.color = BLACK;
+            }
         }else{
             x.val = val;
         }
+
         x.N = 1 + size(x.left) + size(x.right);
+
         return x;
     }
 
-    private void flipColor(Node x){
-        x.color = !x.color;
-        x.left.color = !x.left.color;
-        x.right.color = !x.right.color;
-    }
 
     public void delete(Key key){
         //not implement
