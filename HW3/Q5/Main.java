@@ -3,7 +3,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        RedBlackBST<Integer, Integer> st = new RedBlackBST<>();
+        BinarySearchTree<Integer, Integer> st;
         DataReader dataReader = new DataReader();
 
         String file;
@@ -16,7 +16,7 @@ public class Main {
         }
 
         st = dataReader.readFile(file);
-        System.out.println(st.select(7));
-        System.out.println(st.rank(7));
+        System.out.println("select(7)="+st.select(7));
+        System.out.println("rank(7)="+st.rank(7));
     }
 }
