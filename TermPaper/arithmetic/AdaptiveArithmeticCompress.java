@@ -1,7 +1,7 @@
-/* 
+/*
  * Reference arithmetic coding
  * Copyright (c) Project Nayuki
- * 
+ *
  * https://www.nayuki.io/page/reference-arithmetic-coding
  * https://github.com/nayuki/Reference-arithmetic-coding
  */
@@ -25,7 +25,7 @@ import java.io.InputStream;
  * decompressor have synchronized states, so that the data can be decompressed properly.</p>
  */
 public class AdaptiveArithmeticCompress {
-	
+
 	public static void main(String[] args) throws IOException {
 		// Handle command line arguments
 		if (args.length != 2) {
@@ -35,7 +35,7 @@ public class AdaptiveArithmeticCompress {
 		}
 		File inputFile  = new File(args[0]);
 		File outputFile = new File(args[1]);
-		
+
 		// Perform file compression
 		try (InputStream in = new BufferedInputStream(new FileInputStream(inputFile));
 				BitOutputStream out = new BitOutputStream(new BufferedOutputStream(new FileOutputStream(outputFile)))) {
@@ -43,7 +43,7 @@ public class AdaptiveArithmeticCompress {
 		}
 	}
 	
-	
+
 	// To allow unit testing, this method is package-private instead of private.
 	static void compress(InputStream in, BitOutputStream out) throws IOException {
 		FlatFrequencyTable initFreqs = new FlatFrequencyTable(257);
@@ -60,5 +60,5 @@ public class AdaptiveArithmeticCompress {
 		enc.write(freqs, 256);  // EOF
 		enc.finish();  // Flush remaining code bits
 	}
-	
+
 }
