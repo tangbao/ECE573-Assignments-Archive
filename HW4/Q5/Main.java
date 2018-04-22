@@ -8,7 +8,7 @@ public class Main {
         }
 
         EdgeWeightedGraph G = dataReader.readFile(args[0]);
-//        DFS dfs = new DFS(G, 0);
+        DFS dfs = new DFS(G, 0);
         BFS bfs = new BFS(G, 0);
 
     }

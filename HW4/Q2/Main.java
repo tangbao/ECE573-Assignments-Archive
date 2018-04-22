@@ -17,9 +17,14 @@ public class Main {
         System.out.println("The running time of Kruskal MST is " + r1 + " ns");
 
         NanoTimer nt2 = new NanoTimer();
-        PrimMST pmst = new PrimMST(G);
+        PrimLazy plmst = new PrimLazy(G);
         long r2 = nt2.calc();
-        System.out.println("The running time of Prim MST is " + r2 + " ns");
+        System.out.println("The running time of lazy Prim MST is " + r2 + " ns");
+
+        NanoTimer nt3 = new NanoTimer();
+        PrimMST pmst = new PrimMST(G);
+        long r3 = nt3.calc();
+        System.out.println("The running time of eager Prim MST is " + r3 + " ns");
 
     }
 }

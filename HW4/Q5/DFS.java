@@ -15,16 +15,19 @@ public class DFS {
         edgeTo = new int[G.V()];
         Stack<Integer> stack = new Stack<>();
         stack.push(0);
+        marked[0] = true;
         while(!stack.empty()){
             int v = stack.pop();
-            marked[v] = true;
             for(Edge e: G.adj(v)){
                 int w = e.other(v);
                 if (!marked[w]){
+                    cnt++;
+                    marked[w] = true;
                     edgeTo[w] = v;
                     stack.push(w);
                 }
             }
         }
+        System.out.println("DFS visits " + (cnt+1) + " vertices.");
     }
 }
