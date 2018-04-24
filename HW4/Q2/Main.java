@@ -15,16 +15,19 @@ public class Main {
         KruskalMST kmst = new KruskalMST(G);
         long r1 = nt1.calc();
         System.out.println("The running time of Kruskal MST is " + r1 + " ns");
+        System.out.println("The weight of Kruskal MST is " + kmst.getWeight());
 
         NanoTimer nt2 = new NanoTimer();
         PrimLazy plmst = new PrimLazy(G);
         long r2 = nt2.calc();
         System.out.println("The running time of lazy Prim MST is " + r2 + " ns");
+        System.out.println("The weight of lazy Prim MST is " + plmst.weight());
 
         NanoTimer nt3 = new NanoTimer();
         PrimMST pmst = new PrimMST(G);
         long r3 = nt3.calc();
         System.out.println("The running time of eager Prim MST is " + r3 + " ns");
+        System.out.println("The weight of eager Prim MST is " + pmst.weight());
 
     }
 }
