@@ -1,0 +1,18 @@
+
+Enter every child folder and use
+===========
+javac *.java -Xlint:unchecked
+===========
+to compile the program.
+
+Please ingnore the warnings.
+
+Then use
+===========
+java Main ../datasets/<datafile_name>
+===========
+to run the program.
+
+For Q1 and Q2, use Q1Q2.txt.
+For Q5, use Q5.txt.
+For Q6, use Q4a.txt and Q4b.txt.
