@@ -23,7 +23,7 @@ In huffman folder, use the same cmd to compile. And to compress and decompress:
 ```shell
 java Huffman - < input.txt > output.txt  //(compress)
 java Huffman + < input.txt > output.txt  //(expand)
-```nen
+```
 
 You can find more in the comments of both programmes (or other java files)
 
